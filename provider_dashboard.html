@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='provider_style.css'>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+   
+</head>
+<body>
+ <div class="dashboard">
+
+  <!-- LEFT SIDEBAR -->
+  <div class="sidebar">
+    <h2>ServiceHub</h2>
+
+    <!-- ✅ ADD THIS -->
+    <div class="menu">
+      <button onclick="loadAdd()">Add Service</button>
+      <button onclick="loadServices()">All Services</button>
+      <button onclick="loadBookings()">🔔 Bookings</button>
+      <button onclick="logout()">Logout</button>
+    </div>
+
+  </div>
+
+  <!-- CENTER CONTENT -->
+  <div class="content" id="contentArea">
+    <h2>Welcome  <span id="username"></span></h2>    
+  </div>
+
+</div>
+
+ <script src='provider_script.js'></script>
+</body>
+</html>
